@@ -38,7 +38,7 @@
                     <image>
                         <Image url="@images/Customer_Book_Event4.jpg" />
                     </image></ImageView>
-                <Label layoutX="184.0" style="-fx-font-size: 100; -fx-effect: DropShadow;" styleClass="Honey" stylesheets="@css/Text_Style.css" text="Book an Event with Us" textFill="WHITE" AnchorPane.topAnchor="0.0">
+                <Label layoutX="184.0" style="-fx-font-size: 100; -fx-effect: DropShadow;" styleClass="Honey" stylesheets="@csschf/Text_Style.css" text="Book an Event with Us" textFill="WHITE" AnchorPane.topAnchor="0.0">
                     <effect>
                         <DropShadow />
                     </effect>
@@ -171,7 +171,7 @@
                         <Font size="19.0" />
                     </font>
                 </JFXTextField>
-                <Label layoutX="283.0" layoutY="591.0" style="-fx-font-size: 100; -fx-effect: DropShadow;" styleClass="Honey" stylesheets="@css/Text_Style.css" text="Select a Venue" textFill="WHITE" AnchorPane.topAnchor="591.0">
+                <Label layoutX="283.0" layoutY="591.0" style="-fx-font-size: 100; -fx-effect: DropShadow;" styleClass="Honey" stylesheets="@csschf/Text_Style.css" text="Select a Venue" textFill="WHITE" AnchorPane.topAnchor="591.0">
                     <effect>
                         <DropShadow />
                     </effect>
@@ -538,12 +538,12 @@
 
                     </children>
                 </AnchorPane>
-                <Label layoutX="263.0" layoutY="1209.0"  style="-fx-font-size: 100; -fx-effect: DropShadow;" styleClass="Honey" stylesheets="@css/Text_Style.css" text="Select a Caterer" textFill="WHITE" AnchorPane.topAnchor="1209.0">
+                <Label layoutX="263.0" layoutY="1209.0" style="-fx-font-size: 100; -fx-effect: DropShadow;" styleClass="Honey" stylesheets="@csschf/Text_Style.css" text="Select a Caterer" textFill="WHITE" AnchorPane.topAnchor="1209.0">
                     <effect>
                         <DropShadow />
                     </effect>
                 </Label>
-                <Label layoutX="283.0" layoutY="2417.0" style="-fx-font-size: 100; -fx-effect: DropShadow;" styleClass="Honey" stylesheets="@css/Text_Style.css" text="Photo and Film" textFill="WHITE" AnchorPane.topAnchor="2417.0">
+                <Label layoutX="283.0" layoutY="2417.0" style="-fx-font-size: 100; -fx-effect: DropShadow;" styleClass="Honey" stylesheets="@csschf/Text_Style.css" text="Photo and Film" textFill="WHITE" AnchorPane.topAnchor="2417.0">
                     <effect>
                         <DropShadow />
                     </effect>
@@ -976,7 +976,7 @@
                     <children>
                         <Line endX="100.0" layoutX="176.0" layoutY="28.0" startX="-100.0" stroke="#780000" />
                         <Line endX="100.0" layoutX="179.0" layoutY="75.0" startX="-100.0" stroke="#780000" />
-                        <Label alignment="CENTER" layoutX="54.0" layoutY="16.0" prefHeight="32.0" prefWidth="250.0" style="-fx-font-size: 30;" styleClass="Alif" stylesheets="@css/Text_Style.css" text="Ashe's Menu" textFill="#780000">
+                        <Label alignment="CENTER" layoutX="54.0" layoutY="16.0" prefHeight="32.0" prefWidth="250.0" style="-fx-font-size: 30;" styleClass="Alif" stylesheets="@csschf/Text_Style.css" text="Ashe's Menu" textFill="#780000">
                             <opaqueInsets>
                                 <Insets />
                             </opaqueInsets>
@@ -1066,7 +1066,7 @@
                                 <Font size="9.0" />
                             </font>
                         </JFXCheckBox>
-                        <Label alignment="CENTER" layoutX="117.0" layoutY="76.0" prefHeight="32.0" prefWidth="111.0" style="-fx-font-size: 20;" styleClass="Archivo" stylesheets="@css/Text_Style.css" text="Rice" textFill="#780000">
+                        <Label alignment="CENTER" layoutX="117.0" layoutY="76.0" prefHeight="32.0" prefWidth="111.0" style="-fx-font-size: 20;" styleClass="Archivo" stylesheets="@csschf/Text_Style.css" text="Rice" textFill="#780000">
                             <opaqueInsets>
                                 <Insets />
                             </opaqueInsets>
@@ -1074,7 +1074,7 @@
                                 <Font name="Monotype Corsiva" size="12.0" />
                             </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="117.0" layoutY="141.0" prefHeight="32.0" prefWidth="111.0" style="-fx-font-size: 20;" styleClass="Archivo" stylesheets="@css/Text_Style.css" text="Bread" textFill="#780000">
+                        <Label alignment="CENTER" layoutX="117.0" layoutY="141.0" prefHeight="32.0" prefWidth="111.0" style="-fx-font-size: 20;" styleClass="Archivo" stylesheets="@csschf/Text_Style.css" text="Bread" textFill="#780000">
                             <opaqueInsets>
                                 <Insets />
                             </opaqueInsets>
@@ -1082,7 +1082,7 @@
                                 <Font name="Segoe Script" size="12.0" />
                             </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="117.0" layoutY="345.0" prefHeight="32.0" prefWidth="111.0" style="-fx-font-size: 20;" styleClass="Archivo" stylesheets="@css/Text_Style.css" text="Extras" textFill="#780000">
+                        <Label alignment="CENTER" layoutX="117.0" layoutY="345.0" prefHeight="32.0" prefWidth="111.0" style="-fx-font-size: 20;" styleClass="Archivo" stylesheets="@csschf/Text_Style.css" text="Extras" textFill="#780000">
                             <opaqueInsets>
                                 <Insets />
                             </opaqueInsets>
@@ -1090,7 +1090,7 @@
                                 <Font name="Segoe Script" size="12.0" />
                             </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="117.0" layoutY="268.0" prefHeight="32.0" prefWidth="111.0" style="-fx-font-size: 20;" styleClass="Archivo" stylesheets="@css/Text_Style.css" text="Beverages" textFill="#780000">
+                        <Label alignment="CENTER" layoutX="117.0" layoutY="268.0" prefHeight="32.0" prefWidth="111.0" style="-fx-font-size: 20;" styleClass="Archivo" stylesheets="@csschf/Text_Style.css" text="Beverages" textFill="#780000">
                             <opaqueInsets>
                                 <Insets />
                             </opaqueInsets>
@@ -1098,7 +1098,7 @@
                                 <Font name="Segoe Script" size="12.0" />
                             </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="117.0" layoutY="204.0" prefHeight="32.0" prefWidth="111.0" style="-fx-font-size: 20;" styleClass="Archivo" stylesheets="@css/Text_Style.css" text="Protein" textFill="#780000">
+                        <Label alignment="CENTER" layoutX="117.0" layoutY="204.0" prefHeight="32.0" prefWidth="111.0" style="-fx-font-size: 20;" styleClass="Archivo" stylesheets="@csschf/Text_Style.css" text="Protein" textFill="#780000">
                             <opaqueInsets>
                                 <Insets />
                             </opaqueInsets>
@@ -1118,12 +1118,12 @@
                         </JFXCheckBox>
                     </children>
                 </AnchorPane>
-                <Label layoutX="306.0" layoutY="1790.0" style="-fx-font-size: 100; -fx-effect: DropShadow;" styleClass="Honey" stylesheets="@css/Text_Style.css" text="Select a Menu" textFill="WHITE" AnchorPane.topAnchor="1790.0">
+                <Label layoutX="306.0" layoutY="1790.0" style="-fx-font-size: 100; -fx-effect: DropShadow;" styleClass="Honey" stylesheets="@csschf/Text_Style.css" text="Select a Menu" textFill="WHITE" AnchorPane.topAnchor="1790.0">
                     <effect>
                         <DropShadow />
                     </effect>
                 </Label>
-                <DatePicker fx:id="event_date" layoutX="403.0" layoutY="341.0" prefHeight="46.0" prefWidth="256.0" promptText="      Select Date of Event" style="-fx-skin: transparent; -fx-background-color: transparent; -fx-prompt-text-fill: white; -fx-text-fill: white;" stylesheets="@css/Text_Style.css">
+                <DatePicker fx:id="event_date" layoutX="403.0" layoutY="341.0" prefHeight="46.0" prefWidth="256.0" promptText="      Select Date of Event" style="-fx-skin: transparent; -fx-background-color: transparent; -fx-prompt-text-fill: white; -fx-text-fill: white;" stylesheets="@csschf/Text_Style.css">
                     <effect>
                         <DropShadow />
                     </effect>

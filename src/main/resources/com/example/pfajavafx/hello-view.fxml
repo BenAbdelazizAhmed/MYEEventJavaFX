@@ -22,7 +22,7 @@
         <RowConstraints />
     </rowConstraints>
     <children>
-        <AnchorPane prefHeight="556.0" prefWidth="901.0" style="-fx-background-color: black;" stylesheets="@css/Table_Style.css">
+        <AnchorPane prefHeight="556.0" prefWidth="901.0" style="-fx-background-color: black;" stylesheets="@csschf/Table_Style.css">
             <children>
                 <ImageView fitHeight="600.0" fitWidth="900.0" layoutX="14.0" opacity="0.63" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -31,18 +31,18 @@
                 </ImageView>
                 <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" layoutX="-5.0" layoutY="43.0" opacity="0.4" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: black;" width="900.0" AnchorPane.leftAnchor="-5.0" AnchorPane.topAnchor="43.0" />
 
-                <Label layoutX="220.0" style="-fx-font-size: 100; -fx-effect: DropShadow;" styleClass="Honey" stylesheets="@css/Text_Style.css" text="Liste Clients" textFill="WHITE" AnchorPane.topAnchor="0.0">
+                <Label layoutX="220.0" style="-fx-font-size: 100; -fx-effect: DropShadow;" styleClass="Honey" stylesheets="@csschf/Text_Style.css" text="Liste Clients" textFill="WHITE" AnchorPane.topAnchor="0.0">
                     <effect>
                         <DropShadow />
                     </effect>
                 </Label>
 
-                <TableView fx:id="MainTable" editable="true" layoutX="69.0" layoutY="186.0" prefHeight="320.0" prefWidth="800.0" styleClass="virtual-flow" stylesheets="@css/Text_Style.css" AnchorPane.leftAnchor="69.0" AnchorPane.rightAnchor="31.0">
+                <TableView fx:id="MainTable" editable="true" layoutX="69.0" layoutY="186.0" prefHeight="320.0" prefWidth="800.0" styleClass="virtual-flow" stylesheets="@csschf/Text_Style.css" AnchorPane.leftAnchor="69.0" AnchorPane.rightAnchor="31.0">
                     <effect>
                         <DropShadow />
                     </effect>
                 </TableView>
-                <TextField fx:id="Text_Searchbar" alignment="CENTER" layoutX="384.0" layoutY="138.0" prefHeight="28.0" prefWidth="113.0" promptText="Emp ID, First Name, Last Name, Wage Rate" style="-fx-prompt-text-fill: white; -fx-text-fill: white; -fx-border-color: white;" AnchorPane.rightAnchor="251.0">
+                <TextField fx:id="Text_Searchbar" alignment="CENTER" layoutX="384.0" layoutY="138.0" prefHeight="28.0" prefWidth="113.0" promptText="Emp ID, First Name, Last Name, Wage Rate" style="-fx-prompt-text-fill: black; -fx-text-fill: black; -fx-border-color: white;" AnchorPane.rightAnchor="251.0">
                     <effect>
                         <DropShadow />
                     </effect>
@@ -50,12 +50,12 @@
                         <Font name="System Italic" size="12.0" />
                     </font>
                 </TextField>
-                <JFXButton buttonType="RAISED" layoutX="783.0" layoutY="139.0" opacity="0.72" prefHeight="25.0" prefWidth="104.0" ripplerFill="#a4a4a4" style="-fx-background-color: #00ffa2;" text="Supprimer" textFill="#2c0000" AnchorPane.rightAnchor="27.0">
+                <JFXButton buttonType="RAISED" layoutX="783.0" layoutY="139.0" opacity="0.72" prefHeight="25.0" prefWidth="104.0" ripplerFill="#a4a4a4" style="-fx-background-color: #00ffa2;" text="Supprimer" textFill="#2c0000" AnchorPane.rightAnchor="27.0"  onAction="#supprimerReservations" >
                     <effect>
                         <DropShadow />
                     </effect>
                 </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="682.0" layoutY="139.0" opacity="0.72" prefHeight="25.0" prefWidth="94.0" ripplerFill="#a4a4a4" style="-fx-background-color: #00ffa2;" text="Confirmer" textFill="#2c0000">
+            <JFXButton buttonType="RAISED" layoutX="682.0" layoutY="139.0" opacity="0.72" prefHeight="25.0" prefWidth="94.0" ripplerFill="#a4a4a4" style="-fx-background-color: #00ffa2;" text="Confirmer" textFill="#2c0000" onAction="#confirmerReservations" >
                <effect>
                   <DropShadow />
                </effect>

@@ -25,7 +25,7 @@
                     <image>
                         <Image url="@images/Employee_Sign_In.jpg" />
                     </image></ImageView>
-                <Label layoutX="320.0" layoutY="332.0" style="-fx-font-size: 60;" styleClass="Honey" stylesheets="@css/Text_Style.css" text="Welcome Back" textFill="WHITE">
+                <Label layoutX="320.0" layoutY="332.0" style="-fx-font-size: 60;" styleClass="Honey" stylesheets="@csschf/Text_Style.css" text="Welcome Back" textFill="WHITE">
                     <effect>
                         <DropShadow />
                     </effect>
@@ -78,7 +78,7 @@
                         <Font size="19.0" />
                     </font>
                 </JFXButton>
-                <Label layoutX="303.0" layoutY="274.0" style="-fx-font-size: 40;" styleClass="Julius" stylesheets="@css/Text_Style.css" text="MY EVENTS" textFill="WHITE">
+                <Label layoutX="303.0" layoutY="274.0" style="-fx-font-size: 40;" styleClass="Julius" stylesheets="@csschf/Text_Style.css" text="MY EVENTS" textFill="WHITE">
                     <font>
                         <Font name="Yu Gothic Light" size="58.0" />
                     </font>
@@ -86,7 +86,7 @@
                         <DropShadow />
                     </effect>
                 </Label>
-                <Label alignment="CENTER" layoutX="335.0" layoutY="315.0" style="-fx-font-size: 24;" styleClass="Archivo" stylesheets="@css/Text_Style.css" text="Planning Your EVENT" textFill="WHITE">
+                <Label alignment="CENTER" layoutX="335.0" layoutY="315.0" style="-fx-font-size: 24;" styleClass="Archivo" stylesheets="@csschf/Text_Style.css" text="Planning Your EVENT" textFill="WHITE">
                     <effect>
                         <DropShadow />
                     </effect></Label>

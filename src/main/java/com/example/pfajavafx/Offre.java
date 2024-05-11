@@ -18,7 +18,7 @@ public class Offre {
         this.dateFinRemise = dateFinRemise;
     }
 
-    public Offre(String id, String titre, String description, double prixInitial, double prixRemise, LocalDate dateFinRemise, String entrepreneur_id) {
+    public Offre(String id, String titre, double prixInitial) {
         this.id = id;
         this.titre = titre;
         this.description = description;

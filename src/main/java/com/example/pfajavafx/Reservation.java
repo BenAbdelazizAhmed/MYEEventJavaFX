@@ -2,9 +2,6 @@ package com.example.pfajavafx;
 
 import java.time.LocalDate;
 
-import java.time.LocalDate;
-import java.time.LocalDate;
-
 public class Reservation {
     private String id;
     private String status;
@@ -15,17 +12,16 @@ public class Reservation {
     private Offre offre; // Changer le nom de la variable
     private Client client;
 
-    public Reservation(String id, String status, String heureDebut, String heureFin, LocalDate dateReservation, double avanceClient, Offre offre, Client client) { // Changer le type et le nom de la variable
+    public Reservation(String id, String status, String heureDebut, String heureFin, LocalDate dateReservation, double avanceClient, Offre offre, Client client) {
         this.id = id;
         this.status = status;
         this.heureDebut = heureDebut;
         this.heureFin = heureFin;
         this.dateReservation = dateReservation;
         this.avanceClient = avanceClient;
-        this.offre = offre; // Changer le nom de la variable
+        this.offre = offre;
         this.client = client;
     }
-
     // Getters and setters
     public String getId() {
         return id;

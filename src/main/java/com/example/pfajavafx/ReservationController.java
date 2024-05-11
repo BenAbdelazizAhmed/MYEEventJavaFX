@@ -1,9 +1,9 @@
 package com.example.pfajavafx;
 
-import com.example.pfajavafx.Client;
-import com.example.pfajavafx.Reservation;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -17,12 +17,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
 
-import javafx.fxml.FXML;
 
 public class ReservationController {
     @FXML
     private TableView<Reservation> MainTable;
-
+    private Button confirmerButton;
     @FXML
     private TextField Text_Searchbar;
 
@@ -32,8 +31,58 @@ public class ReservationController {
         ObservableList<Reservation> reservationsDB = getAllReservations();
         MainTable.setItems(reservationsDB);
     }
+    @FXML
+    private void confirmerReservations(ActionEvent event) {
+        String texteSaisi = Text_Searchbar.getText();
+        int reservationId = Integer.parseInt(texteSaisi);
+        confirmReservation(reservationId);
+    }
+    @FXML
+    private void supprimerReservations(ActionEvent event) {
+        String texteSaisi = Text_Searchbar.getText();
+        int reservationId = Integer.parseInt(texteSaisi);
+        supprimerReservation(reservationId);
+    }
 
-    public void initializeTableView() {
+    private void supprimerReservation(int reservationId) {
+        try (Connection connection = connect()) {
+            // Préparer la requête SQL pour mettre à jour le statut de la réservation à "Refusé"
+            String sql = "UPDATE reservations SET status = 'Refusé' WHERE id = ?";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setInt(1, reservationId);
+
+            // Exécuter la requête SQL pour mettre à jour le statut de la réservation
+            int rowsUpdated = statement.executeUpdate();
+
+            if (rowsUpdated > 0) {
+                System.out.println("Le statut de la réservation avec l'ID " + reservationId + " a été mis à jour avec succès.");
+            } else {
+                System.out.println("Aucune réservation trouvée avec l'ID " + reservationId + ". Le statut n'a pas été mis à jour.");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    private void confirmReservation(int reservationId) {
+        try (Connection connection = connect()) {
+            // Préparer la requête SQL pour mettre à jour le statut de la réservation
+            String sql = "UPDATE reservations SET status = 'en cours' WHERE id = ?";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setInt(1, reservationId);
+
+            // Exécuter la requête SQL pour mettre à jour le statut de la réservation
+            int rowsUpdated = statement.executeUpdate();
+
+            if (rowsUpdated > 0) {
+                System.out.println("Le statut de la réservation avec l'ID " + reservationId + " a été mis à jour avec succès.");
+            } else {
+                System.out.println("Aucune réservation trouvée avec l'ID " + reservationId + ". Le statut n'a pas été mis à jour.");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }  public void initializeTableView() {
+
         TableColumn<Reservation, String> idColumn = new TableColumn<>("ID");
         TableColumn<Reservation, String> nomClientColumn = new TableColumn<>("Nom");
         TableColumn<Reservation, String> heureDebutColumn = new TableColumn<>("Prenom");
